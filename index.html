@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow</title>
+    <!--connect css-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--main app content-->
+    <div class="container">
+        <h1>TaskFlow</h1>
+        <!--input section-->
+        <div class="input-section">
+           <!--task input-->
+           <input type="text"
+                  id="taskInput"
+                  placeholder="Enter Task">
+                  <!-- due date-->
+                   <input type="date" id="dueDate">
+                   <!--add button-->
+                   <button id="addBtn">Add Task</button>
+        </div>
+        <div class="controls">
+  <button onclick="filterTasks('all')">All</button>
+  <button onclick="filterTasks('completed')">Completed</button>
+  <button onclick="filterTasks('pending')">Pending</button>
+</div>
+        <!-- task list-->
+         <ul id="taskList"></ul>
+    </div>
+    <!-- connect js-->
+     <script src="script.js"></script>
+</body>
+</html>
