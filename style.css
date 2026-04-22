@@ -1,0 +1,112 @@
+/*remove default spacing*/
+/* smooth animation for everything */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.2s ease;
+}
+/*page layout*/
+body {
+  font-family: Arial;
+  background: linear-gradient(to right, #1294FE, #6EC6FF);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+/*main card*/
+.container {
+  background: white;
+  padding: 30px;
+  width: 500px; /* bigger width */
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+/*title*/
+h1 {
+  text-align: center;
+  color: #1294FE;
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+/*input row*/
+.input-section{
+    display: flex;
+    gap:8px;
+}
+/*text input*/
+input[type="text"]{
+    flex:1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+/*data input*/
+input[type="date"]{
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius: 6px;
+}
+/*button*/
+button{
+    padding:10px;
+    background: #1294FE;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.controls {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.controls button {
+  flex: 1;
+  margin: 5px;
+  background: #e1f2ff;
+  color: #1294FE;
+}
+
+.controls button:hover {
+  background: #1294FE;
+  color: white;
+}
+/*hover effect*/
+button:hover{
+    background: #1082DE;
+}
+/*task item*/
+li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+.done {
+  background: #e6f7ff;
+}
+li span {
+  flex: 1;
+  cursor: pointer;
+}
+/*hover*/
+li:hover{
+    background: #E1F2FF;
+}
+/*completed task*/
+.completed{
+    text-decoration: line-through;
+    color: gray;
+}
+/*group buttons*/
+.actions button {
+  padding: 5px 8px;
+  font-size: 12px;
+}
