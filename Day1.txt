@@ -1,0 +1,98 @@
+//Input Output
+class Solution {
+    public void printNumber(Scanner sc) {
+       int n=sc.nextInt();
+System.out.println(n);
+    }
+}
+
+//If else
+class Solution {
+    public void studentGrade(int marks) {
+        if(marks>=90)
+        System.out.println("Grade A");
+        else if(marks>=70)
+        System.out.println("Grade B");
+        else if(marks>=50)
+        System.out.println("Grade C");
+        else if(marks>=35)
+        System.out.println("Grade D");
+        else
+        System.out.println("Fail");
+    }
+}
+
+//Switch Case 
+class Solution {
+    public void whichWeekDay(int day) {
+        switch(day)
+        {
+            case 1:System.out.println("Monday");
+            break;
+            case 2:System.out.println("Tuesday");
+            break;
+            case 3:System.out.println("Wednesday");
+            break;
+            case 4:System.out.println("Thursday");
+            break;
+            case 5:System.out.println("Friday");
+            break;
+            case 6:System.out.println("Saturday");
+            break;
+            case 7:System.out.println("Sunday");
+            break;
+            default:System.out.println("Invalid");
+            break;
+        }
+    }
+}
+
+//for lopps
+class Solution {
+    public int forLoop(int low, int high) {
+        int sum=0;
+       for(int i=low;i<=high;i++)
+       {
+        sum+=i;
+       }
+       return sum;
+    }
+}
+
+//while loop
+class Solution {
+    public int whileLoop(int d) {
+        // Your code goes here
+        int count=0,sum=0,i=0;
+        while(count<50)
+        {
+            i++;
+            if(i%10==d)
+            {
+                sum+=i;
+                count++;
+            }
+        }
+        return sum;
+    }
+}
+
+//passby reference
+class Solution {
+    public void reverse(int[] arr) {
+   int first=0,last=arr.length-1;
+   while(first<last)
+   {
+    int temp=arr[first];
+    arr[first]=arr[last];
+    arr[last]=temp;
+    first++;
+    last--;
+   }
+   for(int x:arr)
+   {
+    System.out.print(x);
+   }
+    }
+}
+
