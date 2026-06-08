@@ -1,0 +1,278 @@
+//pattern 1
+public class Day2
+
+{
+    public static void main(String[] args)
+    {
+        for(int i=0;i<5;i++)
+        {
+            for(int j=0;j<5;j++)
+            {
+                System.out.print("*"+" ");
+            }
+            System.out.println(" ");
+        }
+    }
+}
+
+//pattern 2
+public class Day2
+
+{
+    public static void main(String[] args)
+    {
+        for(int i=0;i<5;i++)
+        {
+            for(int j=0;j<=i;j++)
+            {
+                System.out.print("*"+" ");
+            }
+            System.out.println(" ");
+        }
+    }
+}
+
+//pattern 3
+public class Day2
+
+{
+    public static void main(String[] args)
+    {
+        for(int i=1;i<=5;i++)
+        {
+            for(int j=1;j<=i;j++)
+            {
+                System.out.print(j+" ");
+            }
+            System.out.println(" ");
+        }
+    }
+}
+
+//pattern 4
+public class Day2
+
+{
+    public static void main(String[] args)
+    {
+        for(int i=1;i<=5;i++)
+        {
+            for(int j=1;j<=i;j++)
+            {
+                System.out.print(i+" ");
+            }
+            System.out.println(" ");
+        }
+    }
+}
+
+//pattern 5
+public class Day2
+
+{
+    public static void main(String[] args)
+    {
+        for(int i=5;i>=1;i--)
+        {
+            for(int j=i;j>=1;j--)
+            {
+                System.out.print("*"+" ");
+            }
+            System.out.println(" ");
+        }
+    }
+}
+
+//pattern 6
+public class Day2
+
+{
+    public static void main(String[] args)
+    {
+        for(int i=5;i>=1;i--)
+        {
+            for(int j=1;j<=i;j++)
+            {
+                System.out.print(j+" ");
+            }
+            System.out.println(" ");
+        }
+    }
+}
+
+//pattern 7
+public class Day2
+
+{
+    public static void main(String[] args)
+    {
+        int space=5,star=1;
+        for(int i=1;i<=5;i++)
+        {
+            space--;
+            for(int j=space;j>=1;j--)
+            {
+                System.out.print(" ");
+            }
+            for(int k=star;k>=1;k--)
+            {
+            System.out.print("*");
+            }
+            star+=2;
+            for(int j=space;j>=1;j--)
+            {
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+//pattern 8
+ public class Day2
+ {
+ public static void main(String[] args)
+    {
+        int space=-1,star=9;
+        for(int i=1;i<=5;i++)
+        {
+            space++;
+            for(int j=0;j<=space;j++)
+            {
+                System.out.print(" ");
+            }
+            for(int k=star;k>=1;k--)
+            {
+            System.out.print("*");
+            }
+            star-=2;
+            for(int j=0;j<=space;j++)
+            {
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+//pattern 9
+public class Day2
+
+{
+    public static void main(String[] args)
+    {
+       p1();
+       p2();
+    }
+    public static void p1()
+    {
+         int space=5,star=1;
+        for(int i=1;i<=5;i++)
+        {
+            space--;
+            for(int j=space;j>=1;j--)
+            {
+                System.out.print(" ");
+            }
+            for(int k=star;k>=1;k--)
+            {
+            System.out.print("*");
+            }
+            star+=2;
+            for(int j=space;j>=1;j--)
+            {
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
+
+    }
+    public static void p2()
+    {
+        int space=-1,star=9;
+        for(int i=1;i<=5;i++)
+        {
+            space++;
+            for(int j=0;j<=space;j++)
+            {
+                System.out.print(" ");
+            }
+            for(int k=star;k>=1;k--)
+            {
+            System.out.print("*");
+            }
+            star-=2;
+            for(int j=0;j<=space;j++)
+            {
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
+
+    }
+}
+
+//pattern 10
+public class Day2
+
+{
+    public static void main(String[] args)
+    {
+       p1();
+       p2();
+    }
+    public static void p1()
+    {
+         for(int i=0;i<5;i++)
+        {
+            for(int j=0;j<=i;j++)
+            {
+                System.out.print("*"+" ");
+            }
+            System.out.println(" ");
+        }
+    
+    }
+    public static void p2()
+    {
+        for(int i=4;i>=1;i--)
+        {
+            for(int j=i;j>=1;j--)
+            {
+                System.out.print("*"+" ");
+            }
+            System.out.println(" ");
+        }
+    }
+}
+
+//pattern 11
+public class Day2
+
+{
+    public static void main(String[] args)
+    {
+        for(int i=1;i<=5;i++)
+        {
+            for(int j=1;j<=i;j++)
+            {
+                if(i%2!=0)
+                {
+                    if(j%2==0)
+                        System.out.print("0");
+                    else
+                        System.out.print("1");
+                }
+                else{
+                    if(j%2==0)
+                        System.out.print("1");
+                    else
+                         System.out.print("0");
+                }
+            }
+            System.out.println(" ");
+        }
+    }
+}
+
+
