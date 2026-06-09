@@ -1,0 +1,133 @@
+//pattern 12
+public class Day3
+{
+    public static void main(String[] args)
+    {
+        int space =8,num=0;
+        for(int i=0;i<4;i++)
+        {
+            space-=2;
+            num++;
+            for(int j=1;j<=num;j++)
+                System.out.print(j);
+            for(int j=1;j<=space;j++)
+                System.out.print(" ");
+            for(int j=num;j>=1;j--)
+                System.out.print(j);
+            System.out.println();
+        }
+    }
+}
+
+//pattern 13
+public class Day3
+{
+    public static void main(String[] args)
+    {
+        int k=1;
+        for(int i=0;i<5;i++)
+        {
+            for(int j=0;j<=i;j++)
+            {
+                System.out.print((k++)+" ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+//pattern 14
+public class Day3
+{
+    public static void main(String[] args)
+    {
+        char[] alpahbets=new char[26];
+        int index=0;
+        for(char c='A';c<='Z';c++)
+        {
+            alpahbets[index++]=c;
+        }
+        for(int i=0;i<5;i++)
+        {
+            for(int j=0;j<=i;j++)
+            {
+                System.out.print(alpahbets[j]+" ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+//pattern 15
+public class Day3
+{
+    public static void main(String[] args)
+    {
+        char[] alpahbets=new char[26];
+        int index=0;
+        for(char c='A';c<='Z';c++)
+        {
+            alpahbets[index++]=c;
+        }
+        for(int i=5;i>0;i--)
+        {
+            for(int j=0;j<i;j++)
+            {
+                System.out.print(alpahbets[j]+" ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+//pattern 16
+public class Day3
+{
+    public static void main(String[] args)
+    {
+        char[] alpahbets=new char[26];
+        int index=0;
+        for(char c='A';c<='Z';c++)
+        {
+            alpahbets[index++]=c;
+        }
+        for(int i=0;i<5;i++)
+        {
+            for(int j=0;j<=i;j++)
+            {
+                System.out.print(alpahbets[i]+" ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+//pattern 17
+public class Day3
+{
+    public static void main(String[] args)
+    {
+        char[] alphabets=new char[26];
+        int index=0,n=5;
+        for(char c='A';c<='Z';c++)
+        {
+            alphabets[index++]=c;
+        }
+        for(int i=0;i<n;i++)
+        {
+            for(int j=0;j<n-i-1;j++)
+            {
+                System.out.print(" ");
+            }
+            for(int j=0;j<(2*i+1)/2;j++)
+            {
+                System.out.print(alphabets[j]);
+            }
+            for(int j=((2*i+1)/2)-2;j>=0;j--)
+            {
+                System.out.print(alphabets[j]);
+            }
+            System.out.println();
+        }
+    }
+}
