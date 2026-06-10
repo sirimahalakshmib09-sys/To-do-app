@@ -1,0 +1,106 @@
+//pattern 18
+public class Day4
+{
+    public static void main(String[] args)
+    {
+        int ind2=0,n=5,k=5;
+        char[] alphabets=new char[26];
+        for(char c='A';c<='Z';c++)
+        {
+            alphabets[ind2++]=c;
+        }
+        for(int i=0;i<n;i++)
+        {
+            k--;
+            for(int x=k;x<=4;x++)
+                   System.out.print(alphabets[x]);
+            System.out.println();
+        }
+    }
+}
+
+//pattern 19
+public class Day4
+{
+    public static void main(String[] args)
+    {
+        int n=10;
+        for(int i=0;i<n/2;i++)
+        {
+           for(int j=0;j<(n-2*i)/2;j++)
+           {
+               System.out.print("*");
+           }
+           for(int j=0;j<2*i;j++)
+           {
+               System.out.print(" ");
+           }
+           for(int j=0;j<(n-2*i)/2;j++)
+           {
+               System.out.print("*");
+           }
+           System.out.println();
+        }
+        int x=5;
+        for(int i=0;i<n/2;i++)
+        {
+            x--;
+           for(int j=0;j<(n-(2*x))/2;j++)
+           {
+               System.out.print("*");
+           }
+           for(int j=0;j<n-2*(i+1);j++)
+           {
+               System.out.print(" ");
+           }
+           for(int j=0;j<(n-(2*x))/2;j++)
+           {
+               System.out.print("*");
+           }
+           System.out.println();
+        }
+    }
+}
+
+//pattern 20
+public class Day4
+{
+    public static void main(String[] args)
+    {
+        int n=10;
+        int x=5;
+        for(int i=0;i<n/2;i++)
+        {
+            x--;
+           for(int j=0;j<(n-(2*x))/2;j++)
+           {
+               System.out.print("*");
+           }
+           for(int j=0;j<n-2*(i+1);j++)
+           {
+               System.out.print(" ");
+           }
+           for(int j=0;j<(n-(2*x))/2;j++)
+           {
+               System.out.print("*");
+           }
+           System.out.println();
+        }
+        for(int i=1;i<n/2;i++)
+        {
+           for(int j=0;j<(n-2*i)/2;j++)
+           {
+               System.out.print("*");
+           }
+           for(int j=0;j<2*i;j++)
+           {
+               System.out.print(" ");
+           }
+           for(int j=0;j<(n-2*i)/2;j++)
+           {
+               System.out.print("*");
+           }
+           System.out.println();
+        }
+    }
+}
