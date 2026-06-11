@@ -1,0 +1,62 @@
+//pattern 21
+public class Day5
+{
+    public static void main(String[] args)
+    {
+        int row=2;
+        for(int i=0;i<row;i++)
+        {
+            for(int j=0;j<((2*row)-(2*i))/2;j++)
+            {
+             System.out.print("*");
+            }
+            for(int j=0;j<2*i;j++)
+            {
+                System.out.print(" ");
+            }
+            for(int j=0;j<((2*row)-(2*i))/2;j++)
+            {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        for(int i=row-1;i>=0;i--)
+        {
+            for(int j=0;j<((2*row)-(2*i))/2;j++)
+            {
+             System.out.print("*");
+            }
+            for(int j=0;j<2*i;j++)
+            {
+                System.out.print(" ");
+            }
+            for(int j=0;j<((2*row)-(2*i))/2;j++)
+            {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+
+//pattern 22
+public class Day5
+{
+    public static void main(String[] args)
+    {
+       int n=4,size=2*n-1;
+       for(int i=0;i<size;i++)
+       {
+           for(int j=0;j<size;j++)
+           {
+               int top=i;
+               int left=j;
+               int right=size-1-j;
+               int down=size-1-i;
+               int min=Math.min(Math.min(top,left),Math.min(down,right));
+               System.out.print(n-min);
+           }
+           System.out.println();
+       }
+    }
+}
