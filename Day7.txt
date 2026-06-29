@@ -1,0 +1,65 @@
+//GCD OF TWO NUMBERS
+//Brute Force approach
+class Solution {
+    public int GCD(int n1, int n2) {
+        int max=0;
+        for(int i=1;i<=Math.min(n1,n2);i++)
+        {
+            if(n1%i==0 && n2%i==0)
+            {
+                if(i>max)
+                max=i;
+            }
+        }
+        return max;
+    }
+}
+
+//Better approach
+class Solution {
+    public int GCD(int n1, int n2) {
+         for(int i=Math.min(n1,n2);i>=1;i--)
+        {
+            if(n1%i==0 && n2%i==0)
+            {
+                return i;
+            }
+        }
+        return 0;
+    }
+}
+
+//Optimal approach 
+class Solution {
+    public int GCD(int a, int b) {
+        while(a>0 && b>0)
+        {
+            if(a>b)
+            a=a%b;
+            else
+            b=b%a;
+        }
+        if(a==0)
+        return b;
+        else
+        return a;
+    }
+}
+
+//Armstrong number 
+class Solution {
+    static boolean armstrongNumber(int n) {
+        // code here
+        int temp=n,rem=0,arm=0,k=String.valueOf(n).length();
+        while(temp!=0)
+        {
+            rem=temp%10;
+            arm+=Math.pow(rem,k);
+            temp/=10;
+        }
+        if(arm==n)
+        return true;
+        else
+        return false;
+    }
+}
